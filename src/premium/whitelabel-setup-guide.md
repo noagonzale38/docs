@@ -31,7 +31,7 @@ Switch to the `Bot` tab in the sidebar, press `Add Bot` and confirm:
 ![Create Bot](/img/whitelabel/create_bot.webp)
 
 ## (Step 4 of 6) Starting The Bot
-Next, head over to the [Tickets dashboard](https://dashboard.ticketsbot.net/whitelabel) and select the `Whitelabel` tab on the sidebar.
+Next, head over to the [Tickets dashboard](https://dashboard.ticketsbot.cloud/whitelabel) and select the `Whitelabel` tab on the sidebar.
 
 First, we have to submit the bot's token. This is like a password to the bot. **Never send this token to anyone, even in our support server.**
 
@@ -39,7 +39,7 @@ Head back over to the bot tab on the Discord developer portal and copy the token
 
 ![Copy Token](/img/whitelabel/copy_token.webp)
 
-Then in the `Whitelabel` tab of the Tickets dashboard ([link](https://dashboard.ticketsbot.net/whitelabel)), paste the token into the `Bot Token` field and press `Submit`:
+Then in the `Whitelabel` tab of the Tickets dashboard ([link](https://dashboard.ticketsbot.cloud/whitelabel)), paste the token into the `Bot Token` field and press `Submit`:
 
 ![Submit Token](/img/whitelabel/submit_token.webp)
 
@@ -48,7 +48,7 @@ You will then be presented with a message saying that the bot is now online.
 If you receive an error, make sure that you copied the token fully (not the client secret.) Additionally, refresh the page and check the `Error Log` table for any errors.
 
 ## (Step 5 of 6) Inviting The Bot To Your Server
-Before you can invite the bot to your server, you must kick the main `Tickets#6981` bot from your server. It is **extremely** important that you do this **before** inviting your custom bot to your server. If you do not do this, you risk data loss.
+Before you can invite the bot to your server, you must kick the main `Tickets v2#5105` bot from your server. It is **extremely** important that you do this **before** inviting your custom bot to your server. If you do not do this, you risk data loss.
 
 ![Kick Bot](/img/whitelabel/kick_bot.webp)
 
@@ -81,7 +81,7 @@ On the `General Information` tab of the Discord developer portal, you may have n
 
 You should enter our policies here to inform users of how their data may be used.
 
-**Terms Of Service:** https://ticketsbot.net/terms-of-service  
-**Privacy Policy:** https://ticketsbot.net/privacy
+**Terms Of Service:** https://ticketsbot.cloud/terms-of-service  
+**Privacy Policy:** https://ticketsbot.cloud/privacy
 
 ![Policies](/img/whitelabel/policies.webp)

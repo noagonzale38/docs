@@ -127,12 +127,12 @@ Toggle whether you'd like open tickets to be automatically closed if the Ticket 
 ### Since Open With No Response
 Set a timeframe in the boxes. If Ticket Opener does not type a message within that timeframe, the ticket will be closed automatically.
 
-- _This is a premium feature. Learn more about premium [here](https://ticketsbot.net/premium)._
+- _This is a premium feature. Learn more about premium [here](https://ticketsbot.cloud/premium)._
 
 ### Since Last Message
 Set a timeframe in the boxes. If no messages occur within that timeframe, the ticket will be closed automatically.
 
-- _This is a premium feature. Learn more about premium [here](https://ticketsbot.net/premium)._
+- _This is a premium feature. Learn more about premium [here](https://ticketsbot.cloud/premium)._
 
 ## Ticket Permissions
 In this area you can define if some permissions are given to the users who open tickets.
@@ -143,7 +143,7 @@ In this area you can define if some permissions are given to the users who open 
 ## Colour Scheme
 Select custom colours for the embedded messages from Tickets bot.
 
-- _This is a premium feature. Learn more about premium [here](https://ticketsbot.net/premium)._
+- _This is a premium feature. Learn more about premium [here](https://ticketsbot.cloud/premium)._
 
 ## Completion
 Once you have configured these settings to your liking, click `Submit` for them to take effect in your server.
