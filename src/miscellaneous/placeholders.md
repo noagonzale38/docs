@@ -8,6 +8,7 @@
 |--|--|
 | %user% | Mentions the user |
 | %username% | Display the user's name |
+| %user_id% | Display the user's numeric Id |
 | %ticket_id% | Display the ticket's numeric ID |
 | %open_tickets% | Display the number of open tickets in the server |
 | %total_tickets% | Display the number of tickets that have ever been opened in the server |
