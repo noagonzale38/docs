@@ -9,25 +9,25 @@ If you run a service that incorporates [Discord OAuth](https://discord.com/devel
 
 A simple example would be a forum! When a user opens a ticket in your Discord server, you could include the user's forum username automatically.
 
-Another example is our built-in Bloxlink integration, which allows you to include the Roblox usernames, profile URLs and more in tickets. The Bloxlink integration is automatically enabled in all servers. You can view the welcome message placeholders available through it [here](https://docs.ticketsbot.cloud/setup/placeholders#bloxlink).
+Another example is our built-in Bloxlink integration, which allows you to include the Roblox usernames, profile URLs and more in tickets. The Bloxlink integration is automatically enabled in all servers. You can view the welcome message placeholders available through it [here](https://docs.csrperlc.com/setup/placeholders#bloxlink).
 
 Integrations do not necessarily need to fetch information about a user either! In the [next tutorial](), we show you how we built the cryptocurrency price integration.
 
 ## Background Setup
 Let's say we run a game, where users link their accounts to their Discord accounts. Users have usernames, scores and other metadata which we wish to display in the welcome message when a user opens a ticket.
 
-The following is some simple code that serves some example JSON data that we will be using for this tutorial. Let's say that this code is running on a web server, accessible at `https://example.ticketsbot.cloud`:
+The following is some simple code that serves some example JSON data that we will be using for this tutorial. Let's say that this code is running on a web server, accessible at `https://example.csrperlc.com`:
 
 ```js
 const express = require("express");
 const app = express();
 
 let users = {
-  "585576154958921739": {
+  "1213915425369227334": {
     online_status: "Online",
     user: {
-      username: "Ryan",
-      account_created_year: 2019,
+      username: "Noah",
+      account_created_year: 2024,
       scores: {
         high_score: 3000,
         last_score: 400,
@@ -43,15 +43,15 @@ app.listen(process.env.PORT, () => console.log("Listening..."));
 
 The server responds with the user object stored in the `users` dictionary if it exists, or alternatively with an empty JSON object, `{}`.
 
-For example, sending a request to `https://example.ticketsbot.cloud/lookup?user=585576154958921739`:
+For example, sending a request to `https://example.csrperlc.com/lookup?user=585576154958921739`:
 
 ```bash
-$ curl https://example.ticketsbot.cloud/lookup?user=585576154958921739 | jq .
+$ curl https://example.csrperlc.com/lookup?user=585576154958921739 | jq .
 {
   "online_status": "Online",
   "user": {
-    "username": "Ryan",
-    "account_created_year": 2019,
+    "username": "Noah",
+    "account_created_year": 2024,
     "scores": {
       "high_score": 3000,
       "last_score": 400
@@ -67,7 +67,7 @@ All data types are supported, except for JSON arrays. You should pre-process you
 ## Creating Your Integration
 Now that we have somewhere to pull data from, we can start linking it up with Tickets!
 
-First, head over to our [web dashboard](https://dashboard.ticketsbot.cloud), select any server, and then navigate to the Integrations tab in the navbar. From there, you will be able to press the "Create Integration" button:
+First, head over to our [web dashboard](https://dashboard.csrperlc.com), select any server, and then navigate to the Integrations tab in the navbar. From there, you will be able to press the "Create Integration" button:
 
 ![Navigation](/img/integrations/navbar.webp)
 
@@ -81,14 +81,14 @@ You will be then be prompted to enter information about how the integration work
 
 ![Request URL](/img/integrations/request_url.webp)
 
-Upon a ticket being opened, we will send a HTTP request to the provided request URL, to which you should respond with a JSON object that we can extract values of your choice from. You can use the placeholder `%user_id%` in the URL, which will be replaced with the user ID of the user who opened the ticket. In our case, we set this to `https://example.ticketsbot.cloud/lookup?user=%user_id%`.
+Upon a ticket being opened, we will send a HTTP request to the provided request URL, to which you should respond with a JSON object that we can extract values of your choice from. You can use the placeholder `%user_id%` in the URL, which will be replaced with the user ID of the user who opened the ticket. In our case, we set this to `https://example.csrperlc.com/lookup?user=%user_id%`.
 
 Requests can either be sent as GET or POST requests. POST requests are sent with a JSON body with information about the ticket. An example body is as follows:
 
 ```json
 {
   "guild_id": "508392876359680000",
-  "user_id": "508391840525975553",
+  "user_id": "1213915425369227334",
   "ticket_id": 30,
   "ticket_channel_id": "508392988985262090",
   "is_new_ticket": true,
@@ -189,7 +189,7 @@ Let's test it out!
 As you can see, the placeholders have successfully been fetched from the web server, and replaced with the provided values!
 
 ## Need Help?
-If you're still not sure about creating integrations, we can help you! You may find it helpful to read our next guide, on [how we created the cryptocurrency price integration](/integrations/creating-the-cryptocurrency-integration). If you're still stuck, feel free to ask us in our [Discord server](https://discord.gg/ticketsbot)!
+If you're still not sure about creating integrations, we can help you! You may find it helpful to read our next guide, on [how we created the cryptocurrency price integration](/integrations/creating-the-cryptocurrency-integration). If you're still stuck, feel free to ask us in our [Discord server](https://discord.gg/B8959ZPPpp)!
 
 ## Security
 We have put **significant** effort into making sure integrations are safe, by ensuring requests are always proxied, and not sent to where they are not supposed to be, including through additional penetration testing.
