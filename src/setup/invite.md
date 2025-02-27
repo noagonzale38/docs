@@ -3,7 +3,7 @@
 
 # NOTE: THIS IS FOR WHITELISTED CSRP MAFIAS, OFFICIAL SERVERS, AND DEPARTMENTS.
 
-**NOTE: If you bought premium, check the patreon posts for the invite. If not, dm [noagonzale38](https://discord.com/users/1213915425369227334)
+**NOTE: If you bought premium, check the patreon posts for the invite. If not, dm [noagonzale38](https://discord.com/users/1213915425369227334)**
   
 You'll first be asked to select the server you want to add the Tickets bot. 
 > **Note:** you must have the **Manage Server** permission to do this.  
