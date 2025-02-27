@@ -1,17 +1,12 @@
 # Official Links
 ***
 
-### Website
-[ticketsbot.cloud](https://ticketsbot.cloud/)
-
-### Invite The Bot
-[invite.ticketsbot.cloud](https://invite.ticketsbot.cloud/)
 
 ### Dashboard
-[dashboard.ticketsbot.cloud](https://dashboard.ticketsbot.cloud/)
+[dashboard.csrperlc.com](https://dashboard.csrperlc.com/)
 
 ### Documentation
-[docs.ticketsbot.cloud](https://docs.ticketsbot.cloud/)
+[docs.csrperlc.com](https://docs.csrperlc.com/)
 
 ### Discord Support Server
-[Support Server](https://discord.gg/ticketsbot)
+[Support Server](https://discord.gg/B8959ZPPpp)
