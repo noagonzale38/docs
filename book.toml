@@ -3,7 +3,7 @@ authors = ["rxdn"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Tickets"
+title = "CSRP Tickets"
 
 [output.html]
 default-theme = "ayu"
